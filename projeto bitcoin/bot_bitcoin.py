@@ -5,14 +5,14 @@ import time
 import bitstamp.client
 import websocket
 
-# ---------------- Configuração ----------------
-PRECO_VENDA = 9000          # vende se o preço ficar ACIMA disso
-PRECO_COMPRA = 8100         # compra se o preço ficar ABAIXO disso
-QUANTIDADE = 0.001          # quantidade de BTC por ordem
-INTERVALO_MINIMO = 60       # segundos mínimos entre duas ordens
-SIMULACAO = True            # True = só imprime, NÃO envia ordens reais
 
-# Credenciais vêm de variáveis de ambiente (nunca escreva no código)
+PRECO_VENDA = 9000          
+PRECO_COMPRA = 8100         
+QUANTIDADE = 0.001          
+INTERVALO_MINIMO = 60       
+SIMULACAO = True            
+
+
 USERNAME = os.environ.get("BITSTAMP_USERNAME")
 KEY = os.environ.get("BITSTAMP_KEY")
 SECRET = os.environ.get("BITSTAMP_SECRET")
