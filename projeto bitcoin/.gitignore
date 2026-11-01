@@ -1,4 +1,53 @@
-.idea/
-__pycache__/
-*.pyc
+# Ambientes virtuais
+venv/
+.venv/
+env/
+ENV/
+venv_*/
+
+# Segredos e credenciais (NUNCA versionar)
+.env
+.env.*
+*.pem
+*.key
+secrets.json
 credenciais.py
+credenciais*.py
+!credenciais_exemplo.py
+credentials.json
+config.local.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados e logs locais
+*.log
+*.sqlite3
+*.db
+
+# IDEs e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
