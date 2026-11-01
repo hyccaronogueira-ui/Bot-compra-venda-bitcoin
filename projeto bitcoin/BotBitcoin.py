@@ -1,6 +1,8 @@
+import bitstamp.client
 import websocket
 import ssl
 import json
+import credenciais
 
 def ao_abrir(ws):
     print("Conexão aberta com o WebSocket do Bitstamp.")
@@ -33,10 +35,18 @@ def ao_receber_mensagem(ws, message):
     else:
         print("Preço dentro da faixa de negociação. Nenhuma ação tomada.")
 
-def comprar():
-    pass  # Função de compra ainda não implementada
-def vender():
-    pass  # Função de venda ainda não implementada
+def cliente():
+    return bitstamp.client.trading(username=credenciais.USERNAME,
+                                    key=credenciais.KEY,
+                                    secret=credenciais.SECRET)
+
+def comprar(quantidade):
+    trading_client = cliente()
+    trading_client.buy_market_order(amount=quantidade)
+
+def vender(quantidade):
+    trading_client = cliente()
+    trading_client.sell_market_order(amount=quantidade)
 
 
 
