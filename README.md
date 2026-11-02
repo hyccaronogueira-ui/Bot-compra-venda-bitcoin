@@ -67,4 +67,4 @@ python bot_bitcoin.py
 
 ## Autor
 
-**hyccaronogueira-ui** — [@hyccaronogueira-ui](https://github.com/hyccaronogueira-ui)
+**whoami** — [@whoami-root](https://github.com/wh0am1-root)
