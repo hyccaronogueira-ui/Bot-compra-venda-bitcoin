@@ -2,7 +2,7 @@
 
 Bot em Python que acompanha o preço do Bitcoin (BTC/USD) em tempo real pelo WebSocket da [Bitstamp](https://www.bitstamp.net/) e, de acordo com uma faixa de preço definida, compra ou vende a mercado.
 
-> ⚠️ **Aviso:** projeto educacional. Operar criptomoedas envolve risco de perda financeira. O bot vem em **modo simulação** por padrão, sem enviar ordens reais. Nada aqui é recomendação de investimento.
+> ⚠️ **Aviso:** projeto educacional feito para fins de aprendizado em ambiente controlado. Operar criptomoedas envolve risco de perda financeira. O bot vem em **modo simulação** por padrão, sem enviar ordens reais. Nada aqui é recomendação de investimento.
 
 ## Como funciona
 
